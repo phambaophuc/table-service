@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @OpenAPIDefinition(info =
 @Info(title = "Table API", version = "${springdoc.version}", description = "Documentation Review API v1.0"),
-        servers = @Server(url = "${gateway.url}")
+        servers = @Server(url = "${gateway.url}/table-service")
 )
 public class TableServiceApplication {
 
